@@ -1,0 +1,1 @@
+/*global require,define*/require(["jquery","require","glide","bootstrap"],function(e,t){e(function(){var n=e("[data-widget*=paint]");n.length&&t(["js/modules/jquery.paint"])})});

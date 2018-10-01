@@ -1,0 +1,276 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  margin-right: 3px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 999;
+}
+
+.header-wrapper {
+	padding: 54px 60px;
+}
+
+.header-logo {
+	float: left;
+	clear: none;
+}
+
+.header_nav {
+	float: right;
+	clear: none;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: normal;
+}
+
+.header_nav-wrapper {
+	list-style: none;
+}
+
+.header_nav-item {
+	margin-left: 22px;
+	float: left;
+	clear: none;
+}
+
+.header_nav-item-a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header_nav-item-a:hover {
+	color: #eee;
+}
+
+.header_nav-item-a--btn {
+	padding: 16px 18px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+
+.header_nav-item-a--donate {
+	margin-top: -18px;
+}
+
+.header_nav-item-a--btn:hover {
+	border: 1px solid #eee;
+}
+
+.content-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.content_article {
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.content_article--fast {
+	background-image: url(../images/bg-fast.jpg);
+}
+
+.content_article--simple {
+	background-image: url(../images/bg-simple.jpg);
+}
+
+.content_article--responsive {
+	background-image: url(../images/bg-responsive.jpg);
+}
+
+.content_article-wrapper {
+	width: 100%;
+	position: absolute;
+	bottom: 0; left: 0;
+}
+
+.content_article-h {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: bold;
+	font-size: 108px;
+	letter-spacing: -5px;
+	margin: 0;
+}
+
+.content_article-p {
+	font-family: 'Georgia', serif;
+	font-size: 28px;
+	margin: 0 0 48px 0;
+	line-height: 1.2em;
+}
+
+.content_article-btns {
+	clear: both;
+	margin-bottom: 108px;
+}
+
+@media (max-height: 768px) {
+	.content_article-btns {
+		margin-bottom: 52px;
+	}
+}
+
+@media (min-height: 900px) {
+	.content_article-btns {
+		margin-bottom: 128px;
+	}
+}
+
+.content_article-btn:first-child {
+	margin-right: 9px;
+}
+
+.content_article-img {
+	position: relative;
+	bottom: -5px;
+	max-width: 800px;
+}
+
+.about {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 9999;
+	display: none;
+}
+
+.about-close {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 40px; left: 40px;
+	z-index: 9999;
+	display: block;
+	background: red;
+}
+
+.about-close:hover {
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	-o-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.about-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 156px 0;
+	background: #fff;
+}
+
+.about-logo {
+	margin: 28px 0 108px 0;
+}
+
+.about-h {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: bold;
+	font-size: 72px;
+	letter-spacing: -5px;
+}
+
+.about-p {
+	font-family: 'Georgia', serif;
+	font-size: 28px;
+	margin: 0 0 156px 0;
+	line-height: 2em;
+	color: #666;
+}
+
+.about-p-a {
+	color: black;
+	text-decoration: none;
+}
+
+.about-p-a:hover {
+	color: blue;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0px 12px 24px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 12px 24px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 12px 24px 0px rgba(50, 50, 50, 0.75);
+}
+
+.slider-nav__item {
+	border-radius: 8px;
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.slider-nav__item:hover {
+	background: #fff;
+}
+
+.slider-nav__item--current {
+	background: #fff;
+}
+
+.slider-arrow {
+	background-image: url(../../images/glide/glide-arrows.png);
+	width: 17px;
+	height: 28px;
+	display: block;
+	padding: 0;
+	color: transparent;
+}
+
+.slider-arrow:hover {
+	color: transparent;
+}
+
+.slider-arrow--left {
+	margin-left: 36px;
+	background-position: 0 0;
+}
+
+.slider-arrow--left:hover {
+	background-position: 0 -28px;
+}
+
+.slider-arrow--right {
+	margin-right: 36px;
+	background-position: -17px 0;
+}
+
+.slider-arrow--right:hover {
+	background-position: -17px -28px;
+}
+
+.footer {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 108px;
+}
+
+

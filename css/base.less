@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+	background-color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+	color: black;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+a {
+	color: #069f76;
+	&:hover {
+		color: #09cd98;
+	}
+}
+
+/* header */
+header {
+	background-color: #09cd98;
+	border-bottom: 3px solid #069f76;
+	color: white;
+	.container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.logo {
+
+	}
+	.login {
+		text-align: right;
+	}
+}
+
+/* chart */
+
+.chartItem {
+	height: 140px;
+	overflow: hidden;
+	padding: 10px;
+	&:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+	img {
+		width: 120px;
+		height: 120px;
+		float: left;
+		border: 2px solid black;
+	}
+}
+
+.chartItem-title {
+	float: left;
+	margin-top: 45px;
+	margin-left: 10px;
+}
+
+/* inside of a strip */
+.listItem {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	border-top: 4px solid #c3c3c3;
+	&:first-child {
+		border-top: none;
+	}
+}
+.centerpiece {
+	border: 7px solid black;
+	width: 100%;
+}
+
+.addContainer {
+	border: 2px dashed black;
+	padding: 20px;
+	.addFile {
+		text-align: center;
+	}
+}
+
+.paintCanvas {
+	background-color: white;
+    image-rendering: optimizeSpeed;             // Older versions of FF
+    image-rendering: -moz-crisp-edges;          // FF 6.0+
+    image-rendering: -webkit-optimize-contrast; // Webkit
+                                                //  (Safari now, Chrome soon)
+    image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+    image-rendering: optimize-contrast;         // Possible future browsers.
+    -ms-interpolation-mode: nearest-neighbor;   // IE
+    image-rendering:-o-crisp-edges;
+}
